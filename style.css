@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.circle{
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+    animation: grow 6s forwards;
+} 
+
+@keyframes grow {
+    0%{
+        transform: scale(2.2);
+        opacity: 1;
+       
+    }
+    100%{
+        transform: scale(6.3);
+        opacity: 0.1;
+       
+    }
+}
